@@ -381,60 +381,59 @@ nav[aria-label="breadcrumb"] {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
-  border: 2px solid transparent;
+  background-color: #198754;
+  border: 2px solid #198754;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: #ffffff;
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-normal);
   line-height: normal;
   padding: 15px 20px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
+/* Hover + focus (site-wide) */
 .custom-btn:hover,
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover {
-  background: #157347;
+.custom-btn:focus {
+  background-color: #157347;
+  border-color: #157347;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Navbar-specific override (beats Bootstrap) */
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
+  padding: 12px 22px;
   color: #ffffff;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
-  color: var(--white-color);
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn:focus {
+  background-color: #157347;
+  color: #ffffff;
 }
 
-.custom-border-btn-wrap .custom-border-btn {
-  border-color: var(--white-color);
-  color: var(--white-color);
+/* Border button variant */
+.custom-border-btn {
+  background: transparent;
+  border: 2px solid #198754;
+  color: #198754;
 }
 
-.custom-border-btn-wrap .custom-border-btn:hover,
-.cta-section .custom-border-btn:hover {
-  background: var(--white-color);
-  color: var(--custom-btn-bg-color);
+.custom-border-btn:hover,
+.custom-border-btn:focus {
+  background-color: #198754;
+  border-color: #198754;
+  color: #ffffff;
 }
 
+/* Border button wrapper links */
 .custom-border-btn-wrap .custom-link {
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .custom-border-btn-wrap .custom-link:hover::after {
-  background: var(--white-color);
-}
-
-.custom-border-btn {
-  background: transparent;
-  border: 2px solid var(--border-color);
-  color: var(--custom-btn-bg-color);
-}
-
-.custom-border-btn:hover {
-  background: var(--custom-btn-bg-color);
-  border-color: transparent;
-  color: var(--white-color);
-}
-
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
-  padding: 12px 22px;
-  color: var(--white-color);
+  background: #ffffff;
 }
 
 
