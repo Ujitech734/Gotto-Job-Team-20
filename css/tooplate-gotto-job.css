@@ -1163,6 +1163,31 @@ nav[aria-label="breadcrumb"] {
   margin-left: auto;
 }
 
+/*---------------------------------------
+  JOB TITLES - LARGE & BOLD
+-----------------------------------------*/
+.job-title {
+  font-size: 2rem;       /* larger than meta info */
+  font-weight: 800;      /* bold */
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.job-title-link {
+  font-size: 2rem;       /* match container */
+  font-weight: 800;      /* bold */
+  color: #212529;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.job-title-link:hover,
+.job-title-link:focus {
+  color: #198754;        /* optional hover highlight */
+}
+
+
 
 /*---------------------------------------
   CTA               
